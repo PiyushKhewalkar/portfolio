@@ -122,7 +122,7 @@ function Projects() {
               </div>
             )}
             <div className="row mono" style={{ gap: 8, flexWrap: 'wrap' }}>
-              {p.live && <a className="badge underline-hover" href={p.live} target="_blank" rel="noreferrer">See if live</a>}
+              {p.live && <a className="badge underline-hover" href={p.live} target="_blank" rel="noreferrer">See it live</a>}
               {p.repo && <a className="badge underline-hover" href={p.repo} target="_blank" rel="noreferrer">github</a>}
             </div>
             {p.stats && (
