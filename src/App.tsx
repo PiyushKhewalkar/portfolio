@@ -50,9 +50,9 @@ function Hero() {
   return (
     <section className="container col fade-in" style={{ gap: 16 }}>
       <div className="row" style={{ gap: 16 }}>
-        <img src="https://avatars.githubusercontent.com/u/20717417?v=4" alt="profile" style={{ width: 72, height: 72, borderRadius: 9999, filter: 'grayscale(100%)', border: '1px solid #2a2a2a' }} />
+        <img src="https://avatars.githubusercontent.com/u/20717417?v=4" alt="profile" style={{ width: 50, height: 50, borderRadius: 9999, filter: 'grayscale(100%)', border: '1px solid #2a2a2a' }} />
         <div className="col" style={{ gap: 6 }}>
-          <h1 className="mono" style={{ fontSize: 36, fontWeight: 600 }}>&lt;Piyush Khewalkar&gt;</h1>
+          <h1 className="mono" style={{ fontSize: 18, fontWeight: 600 }}>&lt;Piyush Khewalkar&gt;</h1>
           <p className="mono muted">//software developer</p>
         </div>
       </div>
