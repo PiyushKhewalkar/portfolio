@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+// <weight>: Use a value from 300 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.space-grotesk-<uniquifier> {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
