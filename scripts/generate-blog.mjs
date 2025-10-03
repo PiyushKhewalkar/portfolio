@@ -151,6 +151,17 @@ const list = `<!doctype html>
         </div>
       </section>
     </main>
+    <!-- 👇 Universal Footer -->
+    <footer class="mono muted" style="margin-top:40px; padding:16px; border-top:1px solid #333; text-align:center; font-size:14px">
+      <div style="margin-bottom:8px">&copy; 2025 Piyush Khewalkar</div>
+      <div style="display:flex; gap:16px; justify-content:center">
+        <a href="https://x.com/piyushkkr" class="underline-hover muted" target="_blank">x</a>
+        <a href="https://github.com/piyushkhewalkar" class="underline-hover muted" target="_blank">github</a>
+        <a href="https://linkedin.com/in/piyushkkr" class="underline-hover muted" target="_blank">linkedin</a>
+        <a href="mailto:work.piyushkkr@gmail.com" class="underline-hover muted">email</a>
+      </div>
+    </footer>
+    <!-- ☝️ Universal Footer -->
     <script>
       const posts = ${JSON.stringify(index)}
       const list = document.getElementById('list')
