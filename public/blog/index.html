@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog — Piyush Khewalkar</title>
+    <meta name="description" content="posts by Piyush Khewalkar" />
+    <link rel="icon" type="image/svg+xml" href="/code.svg" />
+    <link rel="stylesheet" href="/site.css" />
+    <link rel="stylesheet" href="/blog.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="between mono" style="font-size:14px; margin-bottom:12px">
+        <a href="/" class="underline-hover muted">//home</a>
+        <span class="muted">//blog</span>
+      </header>
+      <div class="divider"></div>
+      <section class="col" style="gap:12px">
+        <input class="search" id="q" placeholder="//search posts" />
+        <div id="list" class="col" style="gap:12px">
+          
+            <div class="item">
+              <div class="two-col">
+                <div class="muted mono">Thu Oct 02 2025</div>
+                <div class="col">
+                  <a class="underline-hover title" href="/blog/what-i-am-learning-building-etc/">What I am learning, building, etc...</a>
+                  <p class="muted">First post on my personal blog. A space to share what I’m tinkering with and thinking about.</p>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </section>
+    </main>
+    <script>
+      const posts = [{"title":"What I am learning, building, etc...","slug":"what-i-am-learning-building-etc","description":"First post on my personal blog. A space to share what I’m tinkering with and thinking about.","date":"2025-10-02T00:00:00.000Z"}]
+      const list = document.getElementById('list')
+      const q = document.getElementById('q')
+      function render(items){
+        list.innerHTML = items.map(function(p){
+          var d = new Date(p.date).toDateString();
+          return '<div class="two-col item">
+'
+            + '  <div class="muted mono">' + d + '</div>
+'
+            + '  <div class="col">
+'
+            + '    <a class="underline-hover title" href="/blog/' + p.slug + '/">' + p.title + '</a>
+'
+            + '    <p class="muted">' + (p.description || '') + '</p>
+'
+            + '  </div>
+'
+            + '</div>'
+        }).join('')
+      }
+      function filter(){
+        const term = q.value.toLowerCase()
+        const out = posts.filter(p => p.title.toLowerCase().includes(term) || p.description.toLowerCase().includes(term))
+        render(out)
+      }
+      q.addEventListener('input', filter)
+      render(posts)
+    </script>
+  </body>
+</html>

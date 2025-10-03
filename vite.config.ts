@@ -6,4 +6,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  // treat this as a multi-page app so Vite doesn't rewrite all paths to index.html
+  appType: 'mpa',
 })

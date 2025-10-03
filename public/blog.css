@@ -1,0 +1,34 @@
+.post .content img, .post .content video, .post .content audio, .post .content iframe {
+  max-width: 100%;
+}
+.post pre code { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.post pre { border: 1px solid #2a2a2a; background: #0f0f0f; border-radius: 0px; padding: 12px; overflow-x: auto; }
+.post a { border-bottom: 1px dotted transparent; text-decoration: none; }
+.post a:hover { border-bottom-color: #3b82f6; }
+
+/* blog list */
+.search { width: 100%; background: #0f0f0f; border: 1px solid #2a2a2a; color: #e5e5e5; border-radius: 0px; padding: 10px 12px; }
+.search:focus { outline: none; border-color: #3b82f6; }
+.item { border: 1px solid #2a2a2a; background: #0f0f0f; padding: 12px; border-radius: 0px; transition: border-color .15s ease; }
+.item:hover { border-color: #3b82f6; }
+.item .two-col { align-items: flex-start; }
+.item a.title { font-size: 18px; color: var(--fg); }
+.item a.title:visited { color: var(--fg); }
+.item a.title:hover { border-bottom-color: #3b82f6; color: var(--fg); }
+
+/* match site text style inside posts */
+.post .content { line-height: 1.75; font-size: 16px; }
+.post .content p { margin: 12px 0; color: var(--fg); }
+.post .content h2, .post .content h3, .post .content h4 { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; margin: 24px 0 8px; color: var(--fg); }
+.post .content h2 { font-size: 22px; }
+.post .content h3 { font-size: 18px; }
+.post .content h4 { font-size: 16px; }
+.post .content ul, .post .content ol { padding-left: 20px; margin: 12px 0; }
+.post .content li { margin: 6px 0; }
+.post .content blockquote { border-left: 2px solid #2a2a2a; padding-left: 12px; color: var(--muted); margin: 12px 0; }
+.post .content code:not(pre code) { background: #0f0f0f; border: 1px solid #2a2a2a; padding: 2px 4px; border-radius: 0px; font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.post .content hr { border: 0; height: 1px; background: #1a1a1a; margin: 24px 0; }
+.post .content a { color: var(--fg); }
+.post .content a:visited { color: var(--fg); }
+.post .content a:hover { color: var(--fg); border-bottom-color: #3b82f6; }
+

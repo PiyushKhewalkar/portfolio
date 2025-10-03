@@ -25,6 +25,7 @@ function Header() {
   const time = useClockWithTimezone()
   const left: LinkItem[] = [
     { label: '//portfolio', href: '/' },
+    { label: '//blog', href: '/blog/' },
     { label: '//contact', href: '#contact' },
     { label: '//github', href: 'https://github.com/piyushkhewalkar' },
   ]
@@ -182,7 +183,7 @@ function Learning() {
     <section className="container col fade-in" style={{ gap: 12 }} id="about">
       <h2 className="mono muted">//what im learning</h2>
       <p style={{ lineHeight: 1.7, maxWidth: 760 }}>
-        I am actively learning STEM since childhood. right now i am expanding my stack by learning web 3 tech... till now i have managed to create a basic, half-balked web3 wallet - github.com/piyushkhewalkar/web3-wallet
+      i've been into STEM since childhood and right now i'm expanding my stack with Web3 technologies. so far, i’ve built a basic, half-baked Web3 wallet - github.com/piyushkhewalkar/web3-wallet
       </p>
       <div className="divider" />
     </section>
