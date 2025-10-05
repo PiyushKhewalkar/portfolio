@@ -103,10 +103,9 @@ function Projects() {
   return (
     <section className="container col fade-in" style={{ gap: 12 }} id="projects">
       <h2 className="mono muted">//projects</h2>
-      {projects.map((p) => (
-        <div key={p.title} className="two-col" style={{ marginTop: 8 }}>
-          <div className="muted mono">{p.period ?? '—'}</div>
-          <div className="col" style={{ gap: 8 }}>
+      {projects.map((p, index) => (
+        <div key={p.title}>
+          <div className="col fade-in" style={{ gap: 8, marginTop: 8 }}>
             <div className="badge mono">{p.title}</div>
             <p style={{ lineHeight: 1.7, maxWidth: 760 }}>{p.summary}{p.tech ? ` stack: ${p.tech}.` : ''}</p>
             {p.media && p.media.length > 0 && (
@@ -132,6 +131,13 @@ function Projects() {
               </div>
             )}
           </div>
+          {index < projects.length - 1 && (
+            <div style={{ 
+              height: 1, 
+              background: 'linear-gradient(to right, transparent, #2a2a2a, transparent)', 
+              margin: '20px 0' 
+            }} />
+          )}
         </div>
       ))}
       <div className="divider" />
