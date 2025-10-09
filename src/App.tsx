@@ -149,6 +149,7 @@ function Skills() {
   const languages = [
     { name: 'javascript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
     { name: 'typescript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+    { name: 'solidity', logo: 'https://res.cloudinary.com/teepublic/image/private/s--3vBpnJtd--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1665248663/production/designs/35529713_.jpg' },
     { name: 'html', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
     { name: 'css', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' }
   ]
@@ -228,7 +229,7 @@ function Learning() {
     <section className="container col fade-in" style={{ gap: 12 }} id="about">
       <h2 className="mono muted">//what im learning</h2>
       <p style={{ lineHeight: 1.7, maxWidth: 760 }}>
-      i've been into STEM since childhood and right now i'm expanding my stack with Web3 technologies. so far, i’ve built a basic, half-baked Web3 wallet - github.com/piyushkhewalkar/web3-wallet
+      i've been into STEM since childhood and right now i'm expanding my stack with Web3 technologies. so far, I've built a token launchpad and a liquidity pool in Solana
       </p>
       <div className="divider" />
     </section>
